@@ -26,5 +26,18 @@ pnpm i -D -w typescript @
 typescript-eslint/eslint-plugin@5.6.0 @typescript-eslint/parser@5.6.0 eslint@7.32.0     
 
 pnpm i -D -w typescript
+pnpm i prettier -D -w 
+
+//避免eslint与prettier冲突
+pnpm i eslint-config-prettier eslint-plugin-prettier -D -w
+//安装husky拦截commit命令
+pnpm i husky -D -w
+npx husky install
+npx husky add .husky/pre-commit "pnpm lint"
+
+//对commit信息进行规范
+pnpm i commitlint @commit
+lint/cli @commitlint/config-conventional -D -w
+
 ```
 
