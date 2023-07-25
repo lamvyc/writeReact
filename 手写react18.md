@@ -2,7 +2,7 @@
 
 ## 搭架子
 
-
+概览
 
 ```js
 pnpm相比其他打包工具的优势:
@@ -41,7 +41,7 @@ lint/cli @commitlint/config-conventional -D -w
 
 ```
 
-
+commit提交规范
 
 ```js
 conventional规范集意义:
@@ -58,7 +58,7 @@ refactor:代码重构。
 test :添加一些测试代码等等。
 ```
 
-
+安装打包工具
 
 ```
 pnpm i -D -w rollup
